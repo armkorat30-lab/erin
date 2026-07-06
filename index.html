@@ -1,146 +1,43 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ERIN JEANS แบรนด์กางเกงยีนส์แฟชั่นผู้หญิง พร้อมส่งและพรีออเดอร์" />
   <title>ERIN JEANS | Women's Denim Fashion</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #111;
-      background: #f7f5f2;
-    }
-    header {
-      padding: 70px 20px;
-      text-align: center;
-      background: #111;
-      color: white;
-    }
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-      letter-spacing: 3px;
-    }
-    header p {
-      font-size: 18px;
-      margin-top: 15px;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-    p {
-      line-height: 1.8;
-      font-size: 16px;
-    }
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 16px;
-      margin-bottom: 25px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-    }
-    .product {
-      background: #eee;
-      padding: 35px 15px;
-      border-radius: 12px;
-      text-align: center;
-      color: #555;
-    }
-    .btn {
-      display: inline-block;
-      margin: 8px 5px;
-      padding: 12px 22px;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #111;
-      color: white;
-      font-size: 14px;
-    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,'Noto Sans Thai',sans-serif;color:#111;background:#faf8f5} a{text-decoration:none;color:inherit} img{width:100%;display:block}
+    .nav{position:sticky;top:0;z-index:10;height:68px;background:rgba(0,0,0,.92);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid rgba(255,255,255,.12)}
+    .logo{font-family:Georgia,serif;letter-spacing:7px;font-size:28px;line-height:.9}.logo span{display:block;font-size:10px;letter-spacing:5px;text-align:center;margin-top:6px}.menu{display:flex;gap:34px;font-size:14px}.icons{display:flex;gap:10px}.circle{width:34px;height:34px;border:1px solid #fff;border-radius:50%;display:grid;place-items:center;font-weight:bold}
+    .hero{min-height:690px;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.38),rgba(0,0,0,.12)),url('assets/product-1.jpg') center 18%/cover no-repeat;color:#fff;display:flex;align-items:center;padding:80px 6vw}.hero-content{max-width:620px}.eyebrow{font-size:18px;margin-bottom:18px}.hero h1{font-family:Georgia,serif;font-size:92px;line-height:.9;letter-spacing:6px;margin:0 0 22px}.hero p{font-size:20px;margin:0 0 32px}.btn{display:inline-flex;align-items:center;gap:18px;background:#fff;color:#111;padding:18px 28px;font-size:14px;letter-spacing:.7px;border:1px solid #ddd}.btn.dark{background:#111;color:#fff;border-color:#111}.wrap{padding:44px 6vw}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.section-head h2{font-family:Georgia,serif;font-weight:400;letter-spacing:1px;font-size:30px;margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff}.photo{aspect-ratio:3/4;overflow:hidden;background:#eee}.photo img{height:100%;object-fit:cover;transition:.45s}.card:hover img{transform:scale(1.045)}.info{text-align:center;padding:12px 8px 22px;font-size:15px}.price{margin-top:4px;color:#555}.feature-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;background:#fff;margin:42px 6vw 0;padding:28px 34px;box-shadow:0 8px 30px rgba(0,0,0,.05)}.feature{display:flex;gap:14px;align-items:flex-start}.feature b{display:block;margin-bottom:5px}.feature .ico{font-size:28px}.about{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding:54px 6vw}.about-box h2{font-family:Georgia,serif;font-size:40px;font-weight:400;margin:0 0 18px}.about-box p{line-height:1.9;color:#333}.contact{background:#111;color:#fff;margin-top:30px;padding:52px 6vw;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:36px}.contact h3{font-family:Georgia,serif;letter-spacing:5px;font-size:32px;margin:0}.contact p,.contact li{color:#ddd;line-height:1.8;font-size:14px}.contact ul{padding:0;margin:0;list-style:none}.footer{text-align:center;background:#070707;color:#aaa;padding:16px;font-size:13px}.policy{background:#fff;margin:0 6vw 46px;padding:30px;border-left:4px solid #111;line-height:1.8;color:#333}.policy h2{margin-top:0}
+    @media(max-width:900px){.menu{display:none}.hero{min-height:620px;background-position:center top}.hero h1{font-size:58px}.grid{grid-template-columns:repeat(2,1fr)}.feature-row,.about,.contact{grid-template-columns:1fr}.feature-row{margin:30px 4vw;padding:24px}.wrap,.about,.contact{padding-left:4vw;padding-right:4vw}.nav{padding:0 4vw}.policy{margin-left:4vw;margin-right:4vw}}
+    @media(max-width:520px){.hero h1{font-size:46px}.hero{padding:60px 5vw}.grid{gap:12px}.info{font-size:13px}.section-head{align-items:flex-start;gap:12px;flex-direction:column}.btn{padding:14px 20px}.logo{font-size:22px}}
   </style>
 </head>
-
 <body>
-
-<header>
-  <h1>ERIN JEANS</h1>
-  <p>Women's Denim Fashion | ???????????? ?????????????????????</p>
-</header>
-
-<section>
-  <div class="box">
-    <h2>????????????</h2>
-    <p>
-      ERIN JEANS ?????????????????????????????????? 
-      ?????????????????????????????????????????? 
-      ???????????????????????? ??????? ???????? 
-      ??????????????????????
-    </p>
-    <p>
-      ???????????? ?????? ????? ??????????????? ?????
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>??????</h2>
-    <div class="products">
-      <div class="product">High Waist Jeans</div>
-      <div class="product">Straight Jeans</div>
-      <div class="product">Wide Leg Jeans</div>
-      <div class="product">Vintage Denim</div>
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>??????????????????</h2>
-    <p>
-      ?????????????????????????? ????????????????????????????????? Facebook Page ??? LINE Official
-    </p>
-    <a class="btn" href="https://facebook.com/?????????????????" target="_blank">Facebook</a>
-    <a class="btn" href="https://line.me/R/ti/p/?????????????" target="_blank">LINE</a>
-  </div>
-
-  <div class="box">
-    <h2>?????????</h2>
-    <p>
-      ?????? ????? ??????????????? ?????<br>
-      ???: 08X-XXX-XXXX<br>
-      Email: contact@yourdomain.com<br>
-      Facebook: ???????????? by ERIN
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>Privacy Policy</h2>
-    <p>
-      ???????????????????????????????????????????????????????????? 
-      ???????????????????????????????????????????????????? ??????????? 
-      ??????????????????????????????? ???????????????????????????????????????????????????????????????
-    </p>
-  </div>
-</section>
-
-<footer>
-  � 2026 ERIN JEANS. All rights reserved.
-</footer>
-
+  <nav class="nav">
+    <a class="logo" href="#">ERIN<span>JEANS</span></a>
+    <div class="menu"><a href="#home">หน้าแรก</a><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อเรา</a></div>
+    <div class="icons"><a class="circle" href="https://facebook.com/" target="_blank">f</a><a class="circle" href="https://line.me/" target="_blank">L</a></div>
+  </nav>
+  <header class="hero" id="home"><div class="hero-content"><div class="eyebrow">แฟชั่นยีนส์สำหรับผู้หญิง</div><h1>ERIN<br>JEANS</h1><p>Women's Denim Fashion</p><a class="btn" href="#products">DISCOVER COLLECTION <span>→</span></a></div></header>
+  <main>
+    <section class="wrap" id="products"><div class="section-head"><h2>NEW COLLECTION</h2><a class="btn" href="#contact">สั่งซื้อสินค้า →</a></div><div class="grid">
+      <article class="card"><div class="photo"><img src="assets/product-2.jpg" alt="Graffiti Wide Leg Jeans"></div><div class="info">Graffiti Wide Leg Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-3.jpg" alt="Vintage Black Wide Jeans"></div><div class="info">Vintage Black Wide Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-4.jpg" alt="Teddy Patch Ripped Jeans"></div><div class="info">Teddy Patch Ripped Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-8.jpg" alt="Pink Splash Wide Jeans"></div><div class="info">Pink Splash Wide Jeans<div class="price">890 THB</div></div></article>
+    </div></section>
+    <section class="wrap"><div class="section-head"><h2>BEST SELLER</h2><a class="btn" href="#contact">ดูสินค้าทั้งหมด →</a></div><div class="grid">
+      <article class="card"><div class="photo"><img src="assets/product-10.jpg" alt="Ripped Light Blue Jeans"></div><div class="info">Ripped Light Blue Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-9.jpg" alt="Tie Dye Wide Jeans"></div><div class="info">Tie Dye Wide Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-7.jpg" alt="Fun Patch Jeans"></div><div class="info">Fun Patch Jeans<div class="price">890 THB</div></div></article>
+      <article class="card"><div class="photo"><img src="assets/product-11.jpg" alt="Beach Ripped Jeans"></div><div class="info">Beach Ripped Jeans<div class="price">890 THB</div></div></article>
+    </div></section>
+    <div class="feature-row"><div class="feature"><div class="ico">🚚</div><div><b>จัดส่งรวดเร็ว</b><p>จัดส่งทั่วประเทศ 1-3 วันได้รับสินค้า</p></div></div><div class="feature"><div class="ico">🛡️</div><div><b>สินค้าคุณภาพ</b><p>คัดสรรดีไซน์และทรงที่ใส่ง่าย</p></div></div><div class="feature"><div class="ico">✅</div><div><b>มั่นใจ 100%</b><p>รับประกันความพอใจ คืนสินค้าได้</p></div></div><div class="feature"><div class="ico">🎧</div><div><b>บริการลูกค้า</b><p>แอดมินให้บริการทุกวัน</p></div></div></div>
+    <section class="about" id="about"><div><img src="assets/product-6.jpg" alt="ERIN JEANS lifestyle"></div><div class="about-box"><h2>ABOUT ERIN</h2><p>ERIN JEANS คือแบรนด์กางเกงยีนส์ผู้หญิงที่เน้นแฟชั่นสมัยใหม่ ทรงสวย ใส่ง่าย และคัดเลือกดีไซน์ที่ตอบโจทย์การใช้งานในทุกวัน</p><p>เรานำเสนอสินค้ากลุ่มยีนส์แฟชั่น ทั้งทรง wide leg, straight, vintage wash, distressed และดีไซน์ลายปัก/แพตช์ สำหรับลูกค้าที่ต้องการลุคโดดเด่นแต่ใส่ง่าย</p><p><b>ดำเนินงานโดย บริษัท เอริน นำเข้าและส่งออก จำกัด</b></p><a class="btn dark" href="#contact">ติดต่อเรา →</a></div></section>
+    <section class="policy"><h2>Privacy Policy</h2><p>เว็บไซต์นี้ใช้เพื่อแสดงข้อมูลสินค้าและช่องทางติดต่อของ ERIN JEANS ข้อมูลที่ลูกค้าติดต่อเข้ามาจะถูกใช้เพื่อการให้บริการ การตอบคำถาม และการดำเนินการสั่งซื้อเท่านั้น บริษัทจะไม่ขายหรือเผยแพร่ข้อมูลส่วนบุคคลของลูกค้าให้บุคคลภายนอกโดยไม่ได้รับอนุญาต</p></section>
+  </main>
+  <footer class="contact" id="contact"><div><h3>ERIN</h3><p>JEANS<br>Women's Denim Fashion</p><p>กางเกงยีนส์แฟชั่นสำหรับผู้หญิง ดีไซน์สวย ใส่ง่าย ในทุกวันของคุณ</p></div><div><h4>เมนู</h4><ul><li><a href="#home">หน้าแรก</a></li><li><a href="#products">สินค้า</a></li><li><a href="#about">เกี่ยวกับเรา</a></li><li><a href="#contact">ติดต่อเรา</a></li></ul></div><div><h4>ข้อมูล</h4><ul><li>การจัดส่งและการชำระเงิน</li><li>นโยบายการคืนสินค้า</li><li>คำถามที่พบบ่อย</li><li>Privacy Policy</li></ul></div><div><h4>ติดต่อเรา</h4><ul><li>Facebook: ERIN JEANS</li><li>LINE Official: @erin.jeans</li><li>Email: info@erinjeans.com</li><li>โทร: 080-123-4567</li></ul></div></footer><div class="footer">© 2026 ERIN JEANS. All Rights Reserved.</div>
 </body>
 </html>
